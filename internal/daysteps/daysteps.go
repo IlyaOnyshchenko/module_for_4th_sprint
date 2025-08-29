@@ -1,9 +1,9 @@
 package daysteps
 
 import (
-	"Project/module_for_4th_sprint/internal/spentcalories"
 	"fmt"
 	"log"
+	"main/internal/spentcalories"
 	"strconv"
 	"strings"
 	"time"
