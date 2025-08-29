@@ -1,10 +1,15 @@
 package daysteps
 
 import (
+	// "fmt"
 	"fmt"
+	"spentcalories"
 	"strconv"
 	"strings"
 	"time"
+	// "strconv"
+	// "strings"
+	// "time"
 )
 
 const (
@@ -36,7 +41,7 @@ func DayActionInfo(data string, weight, height float64) string {
 		return ""
 	}
 	dist := (float64(steps) * stepLength) / mInKm
-	calories := WalkingSpentCalories(steps, weight, height, walkDur)
-	res := fmt.Sprintf("Количество шагов: %d.\n", steps, "Дистанция составила %d км.\n", dist, "Вы сожгли %d ккал.", calories)
+	calories := spentcalories.WalkingSpentCalories(steps, weight, height, walkDur)
+	res := fmt.Sprintf("Количество шагов: %d.\nДистанция составила %d км.\nВы сожгли %d ккал.", steps, calories, dist)
 	return res
 }
