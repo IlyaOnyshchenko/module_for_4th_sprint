@@ -1,3 +1,6 @@
+// Пакет spentcalories служит для подсчета количества сожжённых калорий при беге или ходьбе (RunningSpentCalories() и WalkingSpentCalories).
+// Также в функцияи пакета TrainingInfo() предусмотрен вывод информации о длительности активности, пройденной дистанции и средней скорости.
+// Данные параметры рассчитываются с помощью вспомогательных функций parseTraining(), meanSpeed() и distance()
 package spentcalories
 
 import (
@@ -64,7 +67,7 @@ func distance(steps int, height float64) float64 {
 func meanSpeed(steps int, height float64, duration time.Duration) float64 {
 	// Здесь обработаем ошибку ввода продолжительности активности, так как согласно ТЗ нам это необходимо сделать.
 	// Личное мнение автора кода - нижняя проверка излишняя, так как не равенство нулю и не отрицательное значение
-	// проверяется ниже в теле функции TrainingInfo() при вызове функции parseTraining(). В алгоритме этой функции аргументы для вызова функций meanSpeed() и distance()
+	// проверяется ниже в теле функции TrainingInfo() при вызове функции parseTraining(). В алгоритме последней аргументы для вызова функций meanSpeed() и distance()
 	// проверены.
 	if duration <= 0 {
 		return 0

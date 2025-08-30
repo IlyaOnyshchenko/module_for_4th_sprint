@@ -1,3 +1,5 @@
+// Пакет daysteps реализует функцию анализа и вывода информации о дневной активности с использованием вспомогательной функции parsePackage()
+// и импортируемой с пакета spentcalories функции WalkingSpentCalories()
 package daysteps
 
 import (
