@@ -1,4 +1,4 @@
-module main
+module module_for_4th_sprint
 
 go 1.24.2
 
