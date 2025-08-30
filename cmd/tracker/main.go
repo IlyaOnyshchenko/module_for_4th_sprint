@@ -3,9 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-
-	"github.com/Yandex-Practicum/tracker/internal/daysteps"
-	"github.com/Yandex-Practicum/tracker/internal/spentcalories"
+	"module_for_4th_sprint/internal/daysteps"
+	"module_for_4th_sprint/internal/spentcalories"
 )
 
 func main() {
