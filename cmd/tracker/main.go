@@ -3,9 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-
-	"main/internal/daysteps"
-	"main/internal/spentcalories"
+	"module_for_4th_sprint/internal/daysteps"
+	"module_for_4th_sprint/internal/spentcalories"
 )
 
 func main() {
